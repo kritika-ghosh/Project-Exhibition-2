@@ -5,7 +5,7 @@ import csv
 import json
 import os
 import time
-from integrated import process_sample
+from integrated1_original import process_sample
 
 # =========================
 # CONFIG
@@ -19,9 +19,9 @@ TEXT_COL = "Abstract"
 LABEL_COL = "Domain"
 
 EXPERIMENTS = [
-    #{"name": "flat", "hier": False, "ssp": False, "dlts": False},
-    #{"name": "hier", "hier": True, "ssp": False, "dlts": False},
-    #{"name": "hier+dlts", "hier": True, "ssp": False, "dlts": True},
+    {"name": "flat", "hier": False, "ssp": False, "dlts": False},
+    {"name": "hier", "hier": True, "ssp": False, "dlts": False},
+    {"name": "hier+dlts", "hier": True, "ssp": False, "dlts": True},
     {"name": "hier+dlts+ssp", "hier": True, "ssp": True, "dlts": True}
 ]
 
